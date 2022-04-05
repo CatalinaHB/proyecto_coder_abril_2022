@@ -393,10 +393,10 @@ ul li:hover ul {
   .contenedor {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[6];
-        grid-template-columns: repeat(6, 1fr);
-    -ms-grid-rows: (1fr)[21];
-        grid-template-rows: repeat(21, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas: "barra barra barra barra barra barra" "logo logo logo espacio login carro" "nav1 nav1 nav1 nav1 nav1 nav1" "carrusel carrusel carrusel carrusel carrusel carrusel" "espacio2 espacio2 espacio2 espacio2 espacio2 espacio2" "productos productos productos productos productos productos" "img_carga_liviana img_carga_liviana img_carga_liviana boton_carga_liviana boton_carga_liviana boton_carga_liviana" "img_carga_pesada img_carga_pesada img_carga_pesada boton_carga_pesada boton_carga_pesada boton_carga_pesada " "espacio4 espacio4 espacio4 espacio4 espacio4 espacio4" "servicios servicios servicios servicios servicios servicios" "espacio5 espacio5 espacio5 espacio5 espacio5 espacio5" "img_servicios img_servicios img_servicios img_servicios img_servicios img_servicios" "boton_planos_estructurales boton_planos_estructurales boton_planos_estructurales boton_planos_estructurales boton_planos_estructurales boton_planos_estructurales" "boton_memoria_calculo boton_memoria_calculo boton_memoria_calculo boton_memoria_calculo boton_memoria_calculo boton_memoria_calculo" "boton_detallamiento boton_detallamiento boton_detallamiento boton_detallamiento boton_detallamiento boton_detallamiento" "boton_asesorias boton_asesorias boton_asesorias boton_asesorias boton_asesorias boton_asesorias" "espacio6 espacio6 espacio6 espacio6 espacio6 espacio6" "footer_1 footer_1 footer_1  footer_1 footer_1 footer_1" "footer_2 footer_2 footer_2  footer_2 footer_2 footer_2" "footer_3 footer_3 footer_3 footer_3 footer_3 footer_3" "copy copy copy copy copy copy";
   }
 }

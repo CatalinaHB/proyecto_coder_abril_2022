@@ -173,8 +173,8 @@ nav {
   @media screen and (max-widht:780px){
     .contenedor{
         display: grid;
-        grid-template-columns:repeat(6, 1fr);
-        grid-template-rows: repeat(12, 1fr) ;
+        grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
         grid-template-areas: 
         "barra barra barra barra barra barra"
         "logo logo logo  espacio login carro"
