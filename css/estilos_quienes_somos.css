@@ -1,0 +1,432 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contenedor {
+  background-color: white;
+  border: solid white 0px;
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+  gap: 1px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 60px 60px 60px 60px 1fr 100px 60px 60px 150px 200px 300px 10px;
+      grid-template-rows: 60px 60px 60px 60px 1fr 100px 60px 60px 150px 200px 300px 10px;
+      grid-template-areas: "barra barra barra barra barra barra" "logo logo espacio espacio login carro" "logo logo nav1 nav1 nav1 nav1" "espacio3 espacio3 espacio3 espacio3 espacio3 espacio3" "img img img text text text" "espacio2 espacio2 espacio2 espacio2 espacio2 espacio2" "titulo titulo titulo titulo titulo titulo " "espacio4 espacio4 espacio4 espacio4 espacio4 espacio4" "foto_m1 foto_m2 foto_m3 foto_h1 foto_h2 foto_h3" "texto_m1 texto_m2 texto_m3 texto_h1 texto_h2 texto_h3" "footer_1 footer_1 footer_2 footer_2 footer_3 footer_3" "copy copy copy copy copy copy";
+}
+
+.caja {
+  margin: 1px;
+  padding: 1px;
+}
+
+.barra {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: barra;
+  background-color: #3a54b4;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 50px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 10px;
+  margin-bottom: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.logo {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: logo;
+  background-color: white;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: -10px;
+}
+
+.espacio {
+  background-color: white;
+  color: white;
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: espacio;
+  height: 50px;
+  width: 100px;
+  margin-left: 100%;
+}
+
+.login {
+  background-color: white;
+  -ms-grid-row: 2;
+  -ms-grid-column: 5;
+  grid-area: login;
+  -ms-grid-column-align: right;
+      justify-self: right;
+  height: 50px;
+  width: 50px;
+  margin-right: -80px;
+  border: 5px solid white;
+}
+
+.carro {
+  -ms-grid-row: 2;
+  -ms-grid-column: 6;
+  grid-area: carro;
+  background-color: white;
+  margin-left: 50px;
+  height: 50px;
+  width: 100px;
+  border: 5px solid white;
+}
+
+.nav1 {
+  background-color: white;
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 4;
+  grid-area: nav1;
+  -ms-grid-column-align: right;
+      justify-self: right;
+  height: 30px;
+  width: 700px;
+  margin-right: 60px;
+  margin-top: -20px;
+  margin-bottom: auto;
+}
+
+.espacio3 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: espacio3;
+}
+
+.img {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: img;
+  background-color: white;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  margin-left: 0px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 100%;
+}
+
+.text {
+  -ms-grid-row: 5;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
+  grid-area: text;
+  background-color: white;
+  color: #3a54b4;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: inherit;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+  margin-left: -15px;
+}
+
+.espacio2 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: espacio2;
+}
+
+.titulo {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: titulo;
+  color: #3a54b4;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: bold;
+}
+
+.espacio4 {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: espacio4;
+}
+
+.foto_m1 {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  grid-area: foto_m1;
+}
+
+.foto_m1:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.foto_m2 {
+  -ms-grid-row: 9;
+  -ms-grid-column: 2;
+  grid-area: foto_m2;
+}
+
+.foto_m2:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.foto_m3 {
+  -ms-grid-row: 9;
+  -ms-grid-column: 3;
+  grid-area: foto_m3;
+}
+
+.foto_m3:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.foto_h1 {
+  -ms-grid-row: 9;
+  -ms-grid-column: 4;
+  grid-area: foto_h1;
+}
+
+.foto_h1:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.foto_h2 {
+  -ms-grid-row: 9;
+  -ms-grid-column: 5;
+  grid-area: foto_h2;
+}
+
+.foto_h2:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.foto_h3 {
+  -ms-grid-row: 9;
+  -ms-grid-column: 6;
+  grid-area: foto_h3;
+}
+
+.foto_h3:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.texto_m1 {
+  -ms-grid-row: 10;
+  -ms-grid-column: 1;
+  grid-area: texto_m1;
+  color: #3a54b4;
+  font-size: small;
+  font-style: oblique;
+}
+
+.texto_m2 {
+  -ms-grid-row: 10;
+  -ms-grid-column: 2;
+  grid-area: texto_m2;
+  color: #3a54b4;
+  font-size: small;
+  font-style: oblique;
+}
+
+.texto_m3 {
+  -ms-grid-row: 10;
+  -ms-grid-column: 3;
+  grid-area: texto_m3;
+  color: #3a54b4;
+  font-size: small;
+  font-style: oblique;
+}
+
+.texto_h1 {
+  -ms-grid-row: 10;
+  -ms-grid-column: 4;
+  grid-area: texto_h1;
+  color: #3a54b4;
+  font-size: small;
+  font-style: oblique;
+}
+
+.texto_h2 {
+  -ms-grid-row: 10;
+  -ms-grid-column: 5;
+  grid-area: texto_h2;
+  color: #3a54b4;
+  font-size: small;
+  font-style: oblique;
+}
+
+.texto_h3 {
+  -ms-grid-row: 10;
+  -ms-grid-column: 6;
+  grid-area: texto_h3;
+  color: #3a54b4;
+  font-size: small;
+  font-style: oblique;
+}
+
+.footer_1 {
+  background-color: #3a54b4;
+  -ms-grid-row: 11;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: footer_1;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 100%;
+  height: 100%;
+  margin-bottom: auto;
+}
+
+.footer_2 {
+  background-color: #3a54b4;
+  -ms-grid-row: 11;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: footer_2;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-size: 10px;
+  width: 110%;
+  height: 100%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: auto;
+}
+
+.footer_3 {
+  background-color: #3a54b4;
+  -ms-grid-row: 11;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 2;
+  grid-area: footer_3;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  margin-bottom: auto;
+}
+
+.copy {
+  -ms-grid-row: 12;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: copy;
+  background-color: white;
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+nav {
+  background: white;
+  margin-top: 10px;
+  margin-left: +5px;
+  text-align: right;
+  position: relative;
+  display: flexbox;
+  height: 50px;
+  width: 740px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #3a54b4;
+}
+
+ul {
+  list-style: none;
+  padding: 1.2rem;
+}
+
+li {
+  display: inline-block;
+  position: relative;
+  font-size: 1rem;
+  /*Letra del navegador*/
+  margin: -60px 20px;
+  color: violet;
+}
+
+ul ul {
+  position: absolute;
+  display: none;
+}
+
+ul ul li {
+  display: block;
+  font-size: 1 rem;
+  /*Letra del submenú*/
+  width: 300px;
+  text-align: left;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #3a54b4;
+}
+
+a:hover {
+  color: darkblue;
+  /* Sirve para que la letra cambie de color cuando se pasa el mouse*/
+  font-weight: bold;
+}
+
+ul li:hover ul {
+  display: block;
+  background-color: white;
+}
+
+@media screen and (max-widht: 780px) {
+  .contenedor {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+    -ms-grid-rows: (1fr)[19];
+        grid-template-rows: repeat(19, 1fr);
+        grid-template-areas: "barra barra barra barra barra barra" "logo logo logo  espacio login carro" "nav1 nav1 nav1 nav1 nav1 nav1" "espacio3 espacio3 espacio3 espacio3 espacio3 espacio3" "img img img img img img" "text text text text text text"             "espacio2 espacio2 espacio2 espacio2 espacio2 espacio2" "titulo titulo titulo titulo titulo titulo " "espacio4 espacio4 espacio4 espacio4 espacio4 espacio4" "foto_m1 foto_m1 foto_m1 texto_m1 texto_m1 texto_m1" "foto_m2 foto_m2 foto_m2 texto_m2 texto_m2 texto_m2" "foto_m3 foto_m3 foto_m3 texto_m3 texto_m3 texto_m3" "foto_h1 foto_h1 foto_h1 texto_h1 texto_h1 texto_h1" "foto_h2 foto_h2 foto_h2 texto_h2 texto_h2 texto_h2" "foto_h3 foto_h3 foto_h3 texto_h3 texto_h3 texto_h3" "footer_1 footer_1 footer_1 footer_1 footer_1 footer_1"  "footer_2 footer_2 footer_2 footer_2 footer_2 footer_2" "footer_3 footer_3 footer_3 footer_3 footer_3 footer_3" "copy copy copy copy copy copy";
+  }
+}
+/*# sourceMappingURL=estilos_quienes_somos.css.map */

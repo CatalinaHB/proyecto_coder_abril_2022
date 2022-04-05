@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .contenedor {
+    background-color:white;
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    gap: 1px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-row: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "barra barra barra barra barra barra barra barra barra barra barra barra"
+    "logo logo logo logo espacio espacio espacio espacio espacio espacio login carro"
+    "logo logo logo logo nav1 nav1 nav1 nav1 nav1 nav1 nav1 nav1"
+    "espacio2 espacio2 espacio2 espacio2 espacio2 espacio2 espacio2 espacio2 espacio2 espacio2 espacio2 espacio2"
+    "contacto contacto contacto contacto contacto contacto contacto contacto contacto contacto contacto contacto"
+    "espacio3 form form form form form img_form img_form img_form img_form img_form img_form "
+    "espacio4 espacio4 espacio4 espacio4 espacio4 espacio4 espacio4 espacio4 espacio4 espacio4 espacio4 espacio4 "
+    "footer_1 footer_1 footer_1 footer_1 footer_2 footer_2 footer_2 footer_2 footer_3 footer_3 footer_3 footer_3"
+    "copy copy copy copy copy copy copy copy copy copy copy copy ";}
+.caja {
+    margin: 1px;
+    padding: 1px;
+}
+.barra{
+    grid-area: barra;
+    background-color: rgba(58, 84, 180, 100);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 50px;
+    justify-self: center;
+    align-content: center;
+    margin-top: 10px;
+    margin-bottom: auto;
+    justify-content: center;
+  }
+  .logo{
+    grid-area: logo;
+    background-color: white;
+    align-self: center;
+    margin-left: -10px;
+  }
+  .espacio{
+    grid-area: espacio;
+    color: white;
+  }
+  .carro{
+    grid-area: carro;
+  }
+  .nav1 {
+    background-color: white;
+    grid-area: nav1;
+    justify-self: right;
+    height: 30px;
+    width: 700px;
+    margin-right: 30px;
+    margin-top: +10px;
+    margin-bottom: auto;
+  }
+
+.espacio2{
+    grid-area: espacio2;
+    color: white;
+    height: 50px;
+  }
+.contacto{
+    grid-area: contacto;
+    color:rgba(58, 84, 180, 100);
+    height: 60px;
+}
+.form{
+    grid-area: form;
+    width: 90%;
+    margin-right: 100px;
+    margin-top: +50px;
+    color:rgba(58, 84, 180, 100);
+    
+}
+.img_form{
+    grid-area: img_form;
+    margin-top: -20px;
+}
+.espacio3{
+  grid-area: espacio3;
+  color: white;
+  height: 30px;
+}
+.espacio4{
+  grid-area: espacio4;
+  color: white;
+  height: 30px;
+}
+.footer_1{
+  grid-area: footer_1 ;
+  background-color: rgba(58, 84, 180, 100);
+  color: white;
+
+}
+.footer_2{
+  grid-area: footer_2;
+  background-color: rgba(58, 84, 180, 100);
+  width: 120%;
+  margin-left: -10px;
+  color: white;
+  font-size: small;
+}
+.footer_3{
+  grid-area: footer_3;
+  background-color: rgba(58, 84, 180, 100);
+  color: white;
+  font-size: small;
+  height: 250px;
+}
+.copy{
+  grid-area: copy;
+  font-size: x-small;
+}
+
+
+  /* Inicio Navegador */
+nav {
+    background: white;
+    margin-top: -16px;
+    margin-left: -20px;
+    text-align: right;
+    position: relative;
+    display: flexbox;
+    height: 40px;
+    width: 740px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(58, 84, 180, 100);
+  }
+  ul {
+    list-style: none;
+    padding: 1.2rem;
+  }
+  li {
+    display: inline-block;
+    position: relative;
+    font-size: 1rem; /*Letra del navegador*/
+    margin: -60px 20px;
+    color: violet;
+  }
+  ul ul {
+    position: absolute;
+    display: none;
+  }
+  ul ul li {
+    display: block;
+    font-size: 1 rem; /*Letra del submenú*/
+    width: 300px;
+    text-align: left;
+    margin: auto;
+  }
+  a {
+    text-decoration: none;
+    color: rgba(58, 84, 180, 100);
+  }
+  a:hover {
+    color: darkblue; /* Sirve para que la letra cambie de color cuando se pasa el mouse*/
+    font-weight: bold;
+  }
+  ul li:hover ul {
+    display: block;
+    background-color: white;
+  }
+  /* Fin Navegador */
+  @media screen and (max-widht:780px){
+    .contenedor{
+        display: grid;
+        grid-template-columns:repeat(6, 1fr);
+        grid-template-rows: repeat(12, 1fr) ;
+        grid-template-areas: 
+        "barra barra barra barra barra barra"
+        "logo logo logo  espacio login carro"
+        "nav1 nav1 nav1 nav1 nav1 nav1"
+        "espacio2 espacio2 espacio2 espacio2 espacio2 espacio2"
+        "contacto contacto contacto contacto contacto contacto"
+        "img_form  img_form img_form  img_form  img_form  img_form"
+        "form form form form form form"
+        "espacio4 espacio4 espacio4 espacio4 espacio4 espacio4"
+        "footer_1 footer_1 footer_1 footer_1 footer_1 footer_1" 
+        "footer_2 footer_2 footer_2 footer_2 footer_2 footer_2"
+        "footer_3 footer_3 footer_3 footer_3 footer_3 footer_3"
+        "copy copy copy copy copy copy"
+        }
+}
