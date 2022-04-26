@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -5,13 +6,420 @@
           box-sizing: border-box;
 }
 
-.titulo {
-  background-color: blue;
+.contenedor {
+  background-color: white;
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+  gap: 1px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-row: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas: "barra barra barra barra barra barra barra barra barra barra barra barra" "logo logo logo logo espacio espacio espacio espacio espacio espacio login carro" "logo logo logo logo nav1 nav1 nav1 nav1 nav1 nav1 nav1 nav1" "espacio2 espacio2 espacio2 espacio2 espacio2 espacio2 espacio2 espacio2 espacio2 espacio2 espacio2 espacio2" "galeria galeria galeria galeria galeria galeria galeria galeria galeria galeria galeria galeria" "img_1 img_1 img_1 img_1 img_2 img_2 img_2 img_2 img_3 img_3 img_3 img_3" "espacio3 espacio3 espacio3 espacio3 espacio3 espacio3 espacio3 espacio3 espacio3 espacio3 espacio3 espacio3" "img_4 img_4 img_4 img_4 img_5 img_5 img_5 img_5 img_6 img_6 img_6 img_6" "espacio4 espacio4 espacio4 espacio4 espacio4 espacio4 espacio4 espacio4 espacio4 espacio4 espacio4 espacio4" "img_7 img_7 img_7 img_7 img_8 img_8 img_8 img_8 img_9 img_9  img_9 img_9" "espacio5 espacio5 espacio5 espacio5 espacio5 espacio5 espacio5 espacio5 espacio5 espacio5 espacio5 espacio5 " "img_10 img_10 img_10 img_10 img_11 img_11 img_11 img_11 img_12 img_12 img_12 img_12" "espacio6 espacio6 espacio6 espacio6 espacio6 espacio6 espacio6 espacio6 espacio6 espacio6 espacio6 espacio6" "footer_1 footer_1 footer_1 footer_1 footer_2 footer_2 footer_2 footer_2 footer_3 footer_3 footer_3 footer_3" "copy copy copy copy copy copy copy copy copy copy copy copy ";
+}
+
+.caja {
+  margin: 1px;
+  padding: 1px;
+}
+
+.barra {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-area: barra;
+  background-color: #3a54b4;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 50px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 10px;
+  margin-bottom: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.logo {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: logo;
+  background-color: white;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: -10px;
+}
+
+.espacio {
+  -ms-grid-row: 2;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 6;
+  grid-area: espacio;
   color: white;
 }
 
-.parrafo {
-  background-color: green;
+.carro {
+  -ms-grid-row: 2;
+  -ms-grid-column: 12;
+  grid-area: carro;
+}
+
+.nav1 {
+  background-color: white;
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 8;
+  grid-area: nav1;
+  -ms-grid-column-align: right;
+      justify-self: right;
+  height: 30px;
+  width: 700px;
+  margin-right: 30px;
+  margin-top: +10px;
+  margin-bottom: auto;
+}
+
+.espacio2 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-area: espacio2;
   color: white;
+  height: 50px;
+}
+
+.galeria {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-area: galeria;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #3a54b4;
+  height: 80px;
+}
+
+.img_1 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: img_1;
+  gap: 20px;
+  border-radius: 5px;
+}
+
+.img_1:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.img_2 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 4;
+  grid-area: img_2;
+}
+
+.img_2:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.img_3 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 4;
+  grid-area: img_3;
+}
+
+.img_3:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.img_4 {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: img_4;
+}
+
+.img_4:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.img_5 {
+  -ms-grid-row: 8;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 4;
+  grid-area: img_5;
+}
+
+.img_5:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.img_6 {
+  -ms-grid-row: 8;
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 4;
+  grid-area: img_6;
+}
+
+.img_6:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.img_7 {
+  -ms-grid-row: 10;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: img_7;
+}
+
+.img_7:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.img_8 {
+  -ms-grid-row: 10;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 4;
+  grid-area: img_8;
+}
+
+.img_8:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.img_9 {
+  -ms-grid-row: 10;
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 4;
+  grid-area: img_9;
+}
+
+.img_9:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.img_10 {
+  -ms-grid-row: 12;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: img_10;
+}
+
+.img_10:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.img_11 {
+  -ms-grid-row: 12;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 4;
+  grid-area: img_11;
+}
+
+.img_11:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.img_12 {
+  -ms-grid-row: 12;
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 4;
+  grid-area: img_12;
+}
+
+.img_12:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.espacio3 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-area: espacio3;
+  color: white;
+  height: 10px;
+}
+
+.espacio4 {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-area: espacio4;
+  color: white;
+  height: 10px;
+}
+
+.espacio5 {
+  -ms-grid-row: 11;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-area: espacio5;
+  color: white;
+  height: 10px;
+}
+
+.espacio6 {
+  -ms-grid-row: 13;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-area: espacio6;
+  color: white;
+  height: 10px;
+}
+
+.footer_1 {
+  background-color: #3a54b4;
+  -ms-grid-row: 14;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: footer_1;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 100%;
+  height: 100%;
+  margin-bottom: auto;
+}
+
+.footer_2 {
+  background-color: #3a54b4;
+  -ms-grid-row: 14;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 4;
+  grid-area: footer_2;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-size: 10px;
+  width: 110%;
+  height: 100%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: auto;
+}
+
+.footer_3 {
+  background-color: #3a54b4;
+  -ms-grid-row: 14;
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 4;
+  grid-area: footer_3;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  margin-bottom: auto;
+}
+
+.copy {
+  -ms-grid-row: 15;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-area: copy;
+  background-color: white;
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+/* Inicio Navegador */
+nav {
+  background: white;
+  margin-top: -16px;
+  margin-left: -20px;
+  text-align: right;
+  position: relative;
+  display: flexbox;
+  height: 40px;
+  width: 740px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #3a54b4;
+}
+
+ul {
+  list-style: none;
+  padding: 1.2rem;
+}
+
+li {
+  display: inline-block;
+  position: relative;
+  font-size: 1rem;
+  /*Letra del navegador*/
+  margin: -60px 20px;
+  color: violet;
+}
+
+ul ul {
+  position: absolute;
+  display: none;
+}
+
+ul ul li {
+  display: block;
+  font-size: 1 rem;
+  /*Letra del submenú*/
+  width: 300px;
+  text-align: left;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #3a54b4;
+}
+
+a:hover {
+  color: darkblue;
+  /* Sirve para que la letra cambie de color cuando se pasa el mouse*/
+  font-weight: bold;
+}
+
+ul li:hover ul {
+  display: block;
+  background-color: white;
+}
+
+/* Fin Navegador */
+@media screen and (max-widht: 780px) {
+  .contenedor {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "barra barra barra barra barra barra" "logo logo logo  espacio login carro" "nav1 nav1 nav1 nav1 nav1 nav1" "espacio2 espacio2 espacio2 espacio2 espacio2 espacio2" "galeria galeria galeria galeria galeria galeria" "img_1 img_1 img_1 img_1 img_1 img_1" "img_2 img_2 img_2 img_2 img_2 img_2" "img_3 img_3 img_3 img_3 img_3 img_3" "espacio3 espacio3 espacio3 espacio3 espacio3 espacio3" "img_4 img_4 img_4 img_4 img_4 img_4" "img_5 img_5 img_5 img_5 img_5 img_5" "img_6 img_6 img_6 img_6 img_6 img_6" "espacio4 espacio4 espacio4 espacio4 espacio4 espacio4" "img_7 img_7 img_7 img_7 img_7 img_7" "img_8 img_8 img_8 img_8 img_8 img_8" "img_9 img_9 img_9 img_9 img_9 img_9" "espacio5 espacio5 espacio5 espacio5 espacio5 espacio5" "img_10 img_10 img_10 img_10 img_10 img_10" "img_11 img_11 img_11 img_11 img_11 img_11" "img_12 img_12 img_12 img_12 img_12 img_12" "espacio6 espacio6 espacio6 espacio6 espacio6 espacio6" "footer_1 footer_1 footer_1 footer_1 footer_1 footer_1"  "footer_2 footer_2 footer_2 footer_2 footer_2 footer_2" "footer_3 footer_3 footer_3 footer_3 footer_3 footer_3" "copy copy copy copy copy copy";
+  }
 }
 /*# sourceMappingURL=estilos_galeria.css.map */
